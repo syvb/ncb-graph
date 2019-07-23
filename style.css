@@ -1,0 +1,28 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.graph {
+  width: 80vw;
+  height: 20em;
+}
+
+.graph .bar {
+  height: calc(14% - 0.2em);
+  margin-bottom: 0.2em;
+}
+
+.graph .bar span {
+  height: 100%;
+  display: inline-block;
+}
+
+.vote-line {
+  cursor: pointer;
+}
