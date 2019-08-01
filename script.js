@@ -27,8 +27,10 @@ function generateGraph(data) {
     const votes = person.sort((a, b) => a.amount - b.amount).reverse().filter(user => user.amount > 0);
     const bar = document.createElement("div");
     const nameEle = document.createElement("span");
-    nameEle.innerText = names.filter(name => person.letter === name.id)[0].name;
+    nameEle.innerHTML = names.filter(name => person.letter === name.id)[0].name;
+    
     nameEle.style.width = "15%";
+    nameEle.style.paddingBottom="0.5em";
     //nameEle.style.backgroundColor = "#" + window.md5(nameEle.innerText).substr(0, 6);
     bar.appendChild(nameEle);
     bar.classList.add("bar");

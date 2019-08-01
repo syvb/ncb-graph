@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
 }
@@ -15,7 +15,43 @@ h1 {
 
 .graph .bar {
   height: calc(14% - 0.2em);
-  margin-bottom: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+.graph .bar span {
+  height: 100%;
+  display: inline-block;
+}
+
+.graph .bar span:first-child {
+  vertical-align: middle
+}
+
+.vote-line {
+  cursor: pointer;
+}*/
+
+body {
+  font-family: "Muli";
+  margin: 2em;
+  color: ·1f2348;
+  background-color: #F4F4F5
+}
+
+h1 {
+  font-style: bold;
+  color: #0582ca;
+}
+
+.graph {
+  width: 80vw;
+  height: 20em;
+}
+
+.graph .bar {
+  height: calc(14% - 0.2em);
+  margin-bottom: 0.5em;
+
 }
 
 .graph .bar span {
